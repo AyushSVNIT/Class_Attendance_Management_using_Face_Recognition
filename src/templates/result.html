@@ -1,0 +1,27 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+</head>
+
+<body>
+
+<!--{{ results }}-->
+{% for base64_image in encoding_image %}
+    {% for key , value in base64_image.items() %}
+    {%  for each in results %}
+    {%  if key ==  each['name'] %}
+         {{ each }}
+        <img src="data:image/jpeg;base64, {{ value }} " alt="Image">
+    {% endif %}
+    {% end for %}
+    {% endfor %}
+<hr>
+{% endfor %}
+
+
+</body>
+</html>
+

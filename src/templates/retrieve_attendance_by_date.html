@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Details</title>
+</head>
+<body>
+    Find attendance using Date
+    <br>
+    <h1>Select a Date</h1>
+    <form action="/retrieve_image_uploaded_date" method="POST" >
+        <label for="date">Choose a date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="college">College:</label><br>
+        <select id="college" name="college" required>
+            <option value="" disabled selected>Select your college</option>
+            <option id="college">MIT_Muzaffarpur</option>
+        </select><br><br>
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select your course</option>
+            <option id="course">IT</option>
+        </select><br><br>
+
+        <label for="batch">Batch:</label><br>
+        <select id="batch" name="batch" required>
+            <option value="" disabled selected>Select your batch</option>
+            <option id="batch">2K20</option>
+        </select><br><br>
+
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    Find attendance using Reg No.
+    <br>
+    <form action="/retrieve_image_uploaded_reg" method="POST" >
+        <input type="text" id="reg_no" name="reg_no" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

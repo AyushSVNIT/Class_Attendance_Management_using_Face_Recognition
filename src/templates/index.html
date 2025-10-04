@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect Buttons</title>
+</head>
+
+<body>
+  <button  onclick="User_Registration()"> USER Registration</button>
+  <button onclick="Train()">Train Images</button>
+  <button onclick="Prediction()">Predict Images</button>
+  <button onclick="Retrieve()">Retrieve Attendance Data </button>
+
+  <script>
+    function User_Registration() {
+      window.location.href = "/registration_start";
+    }
+
+    function Train() {
+      window.location.href = "/train_start";
+    }
+
+    function Prediction() {
+      window.location.href = "/predict_start";
+    }
+
+    function Retrieve() {
+      window.location.href = "/retrieve_start";
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<body>-->
+<!--    <h1>Upload an Image</h1>-->
+<!--    <form action="/predict" method="POST" enctype="multipart/form-data">-->
+<!--        <input type="file" name="image" accept="image/*" required>-->
+<!--        <button type="submit">Predict</button>-->
+<!--    </form>-->
+<!--</form>-->
+<!--</body>-->
+
+
+

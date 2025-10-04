@@ -1,0 +1,375 @@
+2024-07-21 17:24:50 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 680, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 227, in detectFace
+    reg_no = self.le.classes_[match_reg_idx[0]]
+AttributeError: 'FacePredictor' object has no attribute 'le'
+2024-07-21 17:24:50 INFO     192.168.47.26 - - [21/Jul/2024 17:24:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-21 17:33:03 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 683, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 230, in detectFace
+    reg_no = self.le.classes_[match_reg_idx[0]]
+AttributeError: 'FacePredictor' object has no attribute 'le'
+2024-07-21 17:33:03 INFO     192.168.47.26 - - [21/Jul/2024 17:33:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-21 19:03:19 INFO     192.168.47.26 - - [21/Jul/2024 19:03:19] "POST /predict HTTP/1.1" 200 -
+2024-07-21 19:18:25 INFO     192.168.47.26 - - [21/Jul/2024 19:18:25] "POST /predict HTTP/1.1" 200 -
+2024-07-21 19:20:14 INFO     192.168.47.26 - - [21/Jul/2024 19:20:14] "POST /predict HTTP/1.1" 200 -
+2024-07-21 19:33:17 INFO     192.168.47.26 - - [21/Jul/2024 19:33:17] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:05:54 INFO     192.168.47.26 - - [21/Jul/2024 20:05:54] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:20:46 INFO     192.168.47.151 - - [21/Jul/2024 20:20:46] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:33:24 INFO     192.168.47.151 - - [21/Jul/2024 20:33:24] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:34:17 INFO     192.168.47.151 - - [21/Jul/2024 20:34:17] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:41:55 INFO     192.168.47.151 - - [21/Jul/2024 20:41:55] "POST /predict HTTP/1.1" 200 -
+2024-07-21 20:52:05 INFO     192.168.47.151 - - [21/Jul/2024 20:52:05] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:03:26 INFO     192.168.47.151 - - [21/Jul/2024 21:03:26] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:11:47 INFO     192.168.47.151 - - [21/Jul/2024 21:11:47] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:31:04 INFO     192.168.47.26 - - [21/Jul/2024 21:31:04] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:31:57 INFO     192.168.47.151 - - [21/Jul/2024 21:31:57] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:40:33 INFO     192.168.47.26 - - [21/Jul/2024 21:40:33] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:45:53 INFO     192.168.47.26 - - [21/Jul/2024 21:45:53] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:49:43 INFO     192.168.47.151 - - [21/Jul/2024 21:49:43] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:51:35 INFO     192.168.47.151 - - [21/Jul/2024 21:51:35] "POST /predict HTTP/1.1" 200 -
+2024-07-21 21:51:51 INFO     192.168.47.151 - - [21/Jul/2024 21:51:51] "POST /retrieve_image_uploaded HTTP/1.1" 200 -
+2024-07-21 22:05:13 INFO     192.168.47.26 - - [21/Jul/2024 22:05:13] "POST /predict HTTP/1.1" 200 -
+2024-07-22 10:19:53 INFO     192.168.47.26 - - [22/Jul/2024 10:19:53] "POST /predict HTTP/1.1" 200 -
+2024-07-22 10:25:19 INFO     192.168.47.26 - - [22/Jul/2024 10:25:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-22 10:32:20 INFO     192.168.47.26 - - [22/Jul/2024 10:32:20] "POST /predict HTTP/1.1" 200 -
+2024-07-22 10:35:05 INFO     192.168.47.26 - - [22/Jul/2024 10:35:05] "POST /predict HTTP/1.1" 200 -
+2024-07-22 10:38:33 INFO     192.168.47.26 - - [22/Jul/2024 10:38:33] "POST /predict HTTP/1.1" 200 -
+2024-07-22 10:40:20 INFO     192.168.47.26 - - [22/Jul/2024 10:40:20] "POST /predict HTTP/1.1" 200 -
+2024-07-22 20:51:57 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 823, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 260, in detectFace
+    cropped_faces = cv2.resize(cropped_faces, fixed_face_size)
+cv2.error: OpenCV(4.1.2) C:\projects\opencv-python\opencv\modules\imgproc\src\resize.cpp:3720: error: (-215:Assertion failed) !ssize.empty() in function 'cv::resize'
+
+2024-07-22 20:51:57 INFO     192.168.47.26 - - [22/Jul/2024 20:51:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-22 20:53:27 INFO     192.168.47.26 - - [22/Jul/2024 20:53:27] "POST /predict HTTP/1.1" 200 -
+2024-07-22 22:34:16 INFO     192.168.47.26 - - [22/Jul/2024 22:34:16] "POST /predict HTTP/1.1" 200 -
+2024-07-24 17:11:49 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 755, in predict
+    json_data = class_obj.detectFace()
+TypeError: detectFace() missing 1 required positional argument: 'filepath'
+2024-07-24 17:11:49 INFO     192.168.72.26 - - [24/Jul/2024 17:11:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-24 17:14:18 INFO     192.168.72.26 - - [24/Jul/2024 17:14:18] "POST /predict HTTP/1.1" 200 -
+2024-07-26 20:34:09 INFO     192.168.27.151 - - [26/Jul/2024 20:34:09] "POST /predict HTTP/1.1" 200 -
+2024-07-26 20:35:00 INFO     192.168.27.151 - - [26/Jul/2024 20:35:00] "[33mPOST /retrieve_image_uploaded HTTP/1.1[0m" 404 -
+2024-07-26 22:06:03 INFO     192.168.27.26 - - [26/Jul/2024 22:06:03] "POST /predict HTTP/1.1" 200 -
+2024-07-26 22:35:41 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 779, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 293, in collection_decider
+    registration_no = self.args['reg_no']
+TypeError: 'Namespace' object is not subscriptable
+2024-07-26 22:35:41 INFO     192.168.27.151 - - [26/Jul/2024 22:35:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-26 22:37:23 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 779, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 293, in collection_decider
+    registration_no = self.args['reg_no']
+TypeError: 'Namespace' object is not subscriptable
+2024-07-26 22:37:23 INFO     192.168.27.26 - - [26/Jul/2024 22:37:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ 2024-07-28 08:53:12 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 779, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 293, in collection_decider
+    registration_no = self.args['reg_no']
+TypeError: 'Namespace' object is not subscriptable
+2024-07-28 08:53:12 INFO     192.168.27.26 - - [28/Jul/2024 08:53:12] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-28 08:58:53 INFO     192.168.27.26 - - [28/Jul/2024 08:58:53] "POST /predict HTTP/1.1" 200 -
+2024-07-28 09:11:33 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 784, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 378, in collection_decider
+    collection = f"{college_dic[college_code]}_{course_dic[course_code]}"
+KeyError: 'wn'
+2024-07-28 09:11:33 INFO     192.168.27.26 - - [28/Jul/2024 09:11:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-28 09:19:13 INFO     192.168.27.26 - - [28/Jul/2024 09:19:13] "POST /predict HTTP/1.1" 200 -
+2024-07-28 09:21:14 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 752, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 250, in detectFace
+    cropped_faces = cv2.resize(cropped_faces, fixed_face_size)
+cv2.error: OpenCV(4.1.2) C:\projects\opencv-python\opencv\modules\imgproc\src\resize.cpp:3720: error: (-215:Assertion failed) !ssize.empty() in function 'cv::resize'
+
+2024-07-28 09:21:14 INFO     192.168.27.26 - - [28/Jul/2024 09:21:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-28 09:32:42 INFO     192.168.27.26 - - [28/Jul/2024 09:32:42] "POST /predict HTTP/1.1" 200 -
+2024-07-28 09:35:03 INFO     192.168.27.26 - - [28/Jul/2024 09:35:03] "POST /predict HTTP/1.1" 200 -
+2024-07-28 09:37:44 INFO     192.168.27.26 - - [28/Jul/2024 09:37:44] "POST /predict HTTP/1.1" 200 -
+2024-07-28 09:39:50 INFO     192.168.27.26 - - [28/Jul/2024 09:39:50] "POST /predict HTTP/1.1" 200 -
+2024-07-28 10:21:52 INFO     192.168.27.26 - - [28/Jul/2024 10:21:52] "POST /predict HTTP/1.1" 200 -
+2024-07-28 10:22:07 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 753, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 175, in detectFace
+    bboxes = self.detector.detect_faces(rgb)
+AttributeError: 'FacePredictor' object has no attribute 'detector'
+2024-07-28 10:22:07 INFO     192.168.27.26 - - [28/Jul/2024 10:22:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-07-28 10:22:44 INFO     192.168.27.26 - - [28/Jul/2024 10:22:44] "POST /predict HTTP/1.1" 200 -
+2024-08-09 21:26:31 INFO     192.168.163.151 - - [09/Aug/2024 21:26:31] "POST /predict HTTP/1.1" 200 -
+2024-08-12 20:37:38 INFO     192.168.204.151 - - [12/Aug/2024 20:37:38] "POST /predict HTTP/1.1" 200 -
+2024-08-12 21:42:03 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 766, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 275, in collection_decider
+    batch_code = int(registration_no[:2])  # 21
+TypeError: 'NoneType' object is not subscriptable
+2024-08-12 21:42:03 INFO     192.168.204.204 - - [12/Aug/2024 21:42:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-12 21:43:25 INFO     192.168.204.151 - - [12/Aug/2024 21:43:25] "[33mPOST /login_sign_in HTTP/1.1[0m" 404 -
+2024-08-12 21:45:59 INFO     192.168.204.151 - - [12/Aug/2024 21:45:59] "POST /login_sign_in HTTP/1.1" 200 -
+2024-08-12 21:46:21 INFO     192.168.204.151 - - [12/Aug/2024 21:46:21] "POST /login_sign_in HTTP/1.1" 200 -
+2024-08-12 21:47:34 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 766, in predict
+    attendance_collectionName = trng_class_obj.collection_decider()
+  File "app.py", line 275, in collection_decider
+    batch_code = int(registration_no[:2])  # 21
+TypeError: 'NoneType' object is not subscriptable
+2024-08-12 21:47:34 INFO     192.168.204.204 - - [12/Aug/2024 21:47:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-12 21:49:56 INFO     192.168.204.204 - - [12/Aug/2024 21:49:56] "POST /predict HTTP/1.1" 200 -
+2024-08-12 21:59:15 INFO     192.168.204.204 - - [12/Aug/2024 21:59:15] "POST /predict HTTP/1.1" 200 -
+2024-08-12 22:01:18 INFO     192.168.204.204 - - [12/Aug/2024 22:01:18] "POST /predict HTTP/1.1" 200 -
+2024-08-12 22:02:37 INFO     192.168.204.151 - - [12/Aug/2024 22:02:37] "POST /login_sign_in HTTP/1.1" 200 -
+2024-08-13 01:15:35 INFO     192.168.68.26 - - [13/Aug/2024 01:15:35] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:16:58 INFO     192.168.68.26 - - [13/Aug/2024 01:16:58] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:26:13 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 734, in predict
+    flag = True
+  File "app.py", line 156, in detectFace
+    bboxes = self.detector.detect_faces(rgb)
+AttributeError: 'FacePredictor' object has no attribute 'detector'
+2024-08-13 01:26:13 INFO     192.168.68.26 - - [13/Aug/2024 01:26:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-13 01:28:08 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 728, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 225, in detectFace
+    cropped_faces = cv2.resize(cropped_faces, fixed_face_size)
+cv2.error: OpenCV(4.1.2) C:\projects\opencv-python\opencv\modules\imgproc\src\resize.cpp:3720: error: (-215:Assertion failed) !ssize.empty() in function 'cv::resize'
+
+2024-08-13 01:28:08 INFO     192.168.68.26 - - [13/Aug/2024 01:28:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-13 01:30:28 INFO     192.168.68.26 - - [13/Aug/2024 01:30:28] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:32:06 INFO     192.168.68.26 - - [13/Aug/2024 01:32:06] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:34:09 INFO     192.168.68.26 - - [13/Aug/2024 01:34:09] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:35:27 INFO     192.168.68.26 - - [13/Aug/2024 01:35:27] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:38:39 INFO     192.168.68.26 - - [13/Aug/2024 01:38:39] "POST /predict HTTP/1.1" 200 -
+2024-08-13 01:47:33 INFO     192.168.68.26 - - [13/Aug/2024 01:47:33] "POST /predict HTTP/1.1" 200 -
+2024-08-13 02:08:40 INFO     192.168.68.26 - - [13/Aug/2024 02:08:40] "POST /predict HTTP/1.1" 200 -
+2024-08-13 02:17:01 INFO     192.168.68.26 - - [13/Aug/2024 02:17:01] "POST /predict HTTP/1.1" 200 -
+2024-08-13 12:11:44 INFO     192.168.248.151 - - [13/Aug/2024 12:11:44] "POST /predict HTTP/1.1" 200 -
+2024-08-13 12:12:29 INFO     192.168.248.151 - - [13/Aug/2024 12:12:29] "POST /predict HTTP/1.1" 200 -
+2024-08-13 14:51:09 INFO     192.168.204.151 - - [13/Aug/2024 14:51:09] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:03:16 INFO     192.168.203.151 - - [16/Aug/2024 11:03:16] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:04:10 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 727, in predict
+    json_data = class_obj.detectFace(filepath)
+  File "app.py", line 155, in detectFace
+    bboxes = self.detector.detect_faces(rgb)
+AttributeError: 'FacePredictor' object has no attribute 'detector'
+2024-08-16 11:04:10 INFO     192.168.203.151 - - [16/Aug/2024 11:04:10] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-16 11:04:42 INFO     192.168.203.151 - - [16/Aug/2024 11:04:42] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:30:37 INFO     192.168.203.151 - - [16/Aug/2024 11:30:37] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:31:23 INFO     192.168.203.151 - - [16/Aug/2024 11:31:23] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:49:25 INFO     192.168.203.171 - - [16/Aug/2024 11:49:25] "POST /predict HTTP/1.1" 200 -
+2024-08-16 11:51:59 INFO     192.168.203.171 - - [16/Aug/2024 11:51:59] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:09:20 INFO     192.168.203.151 - - [16/Aug/2024 14:09:20] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:09:48 INFO     127.0.0.1 - - [16/Aug/2024 14:09:48] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:09:53 INFO     127.0.0.1 - - [16/Aug/2024 14:09:53] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:10:02 INFO     127.0.0.1 - - [16/Aug/2024 14:10:02] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:10:10 INFO     127.0.0.1 - - [16/Aug/2024 14:10:10] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:10:10 INFO     192.168.203.151 - - [16/Aug/2024 14:10:10] "POST /retrieve_image_uploaded_date HTTP/1.1" 200 -
+2024-08-16 14:10:50 ERROR    Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sav91\anaconda3\envs\goenv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 727, in predict
+  File "app.py", line 155, in detectFace
+    # print("entering 5")
+AttributeError: 'FacePredictor' object has no attribute 'detector'
+2024-08-16 14:10:50 INFO     192.168.203.151 - - [16/Aug/2024 14:10:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2024-08-16 14:11:25 INFO     192.168.203.151 - - [16/Aug/2024 14:11:25] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:14:12 INFO     192.168.203.151 - - [16/Aug/2024 14:14:12] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:15:51 INFO     192.168.203.151 - - [16/Aug/2024 14:15:51] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:16:46 INFO     192.168.203.151 - - [16/Aug/2024 14:16:46] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:17:42 INFO     192.168.203.151 - - [16/Aug/2024 14:17:42] "POST /predict HTTP/1.1" 200 -
+2024-08-16 14:18:15 INFO     127.0.0.1 - - [16/Aug/2024 14:18:15] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:15 INFO     127.0.0.1 - - [16/Aug/2024 14:18:15] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:17 INFO     127.0.0.1 - - [16/Aug/2024 14:18:17] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:18 INFO     127.0.0.1 - - [16/Aug/2024 14:18:18] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:20 INFO     127.0.0.1 - - [16/Aug/2024 14:18:20] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:20 INFO     192.168.203.151 - - [16/Aug/2024 14:18:20] "POST /retrieve_image_uploaded_date HTTP/1.1" 200 -
+2024-08-16 14:18:21 INFO     127.0.0.1 - - [16/Aug/2024 14:18:21] "POST /retrieve_image_uploaded_reg HTTP/1.1" 200 -
+2024-08-16 14:18:21 INFO     192.168.203.151 - - [16/Aug/2024 14:18:21] "POST /retrieve_image_uploaded_date HTTP/1.1" 200 -
