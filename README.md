@@ -118,9 +118,4 @@ templates/ static/   # web UI
 
 Tell me which you prefer and I will do it next.
 
-## License
 
-Add a license file if you plan to share this repo publicly (e.g. MIT). This README does not include a license.
-
----
-Generated README — updated to explain install, run and ways to reduce repo size.
