@@ -1,3 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+
+# Data and models (do not commit large datasets or pre-trained weights)
+datasets/
+faceEmbeddingModels/
+insightface/
+Image_to_be_predicted/
+*.h5
+*.pt
+*.t7
+*.ckpt
+*.pb
+*.onnx
+*.npy
+
+# Logs and reports
+*.log
+*.csv
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
